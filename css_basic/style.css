@@ -1,0 +1,41 @@
+/* Flexbox container for the entire body */
+body {
+    display: flex; /* Make the body a flex container */
+    flex-direction: column; /* Arrange children (header, main, footer) vertically */
+    margin: 0; /* Remove default body margin */
+    height: 100vh; /* Ensure the body takes the full viewport height */
+  }
+  
+  /* Flexbox container for the main content */
+  main {
+    display: flex; /* Make the main section a flex container */
+    flex-direction: row; /* Arrange children (article, aside) horizontally */
+    flex: auto; /* Allow main to grow and fill available space */
+  }
+  
+  /* Header and Footer */
+  header, footer {
+    background-color: #f4f4f4; /* Light background for header and footer */
+    padding: 1rem; /* Add some padding */
+    text-align: center; /* Center text */
+    border: 1px solid #ddd; /* Add a light border */
+  }
+  
+  /* Article and Aside */
+  article {
+    flex: 2; /* Takes 2/3 of the available width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 1rem; /* Add padding for spacing */
+    border-right: 1px solid #ddd; /* Add a right border */
+  }
+  
+  aside {
+    flex: 1; /* Takes 1/3 of the available width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 1rem; /* Add padding for spacing */
+  }
+  
+  /* Footer at the bottom */
+  footer {
+    margin-top: auto; /* Push the footer to the bottom of the page */
+  }
