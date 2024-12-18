@@ -1,44 +1,38 @@
-@media screen and (max-width: 768px) {
-  body.works_on_smartphone {
-      flex-direction: column; /* Stack elements vertically */
-  }
-  header, footer {
-      text-align: center; /* Center-align header and footer */
-  }
-  article, aside {
-      flex: 1 1 100%; /* Full width for mobile */
-  }
-}
+/* base.css */
 
-html {
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
+/* إعدادات عامة */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
+/* إعدادات الروابط */
 a {
-  text-decoration: none;
-  color: #0066cc;
+    text-decoration: none;
+    color: #0066cc;
 }
 
 a:hover {
-  text-decoration: underline;
+    color: #004b99;
 }
+
+/* الرسوم المتحركة لزر */
+.button {
+    background-color: #ef233c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d90429;
+}
+

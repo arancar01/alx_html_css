@@ -1,49 +1,52 @@
-/* Header Styling */
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px;
+/* styles.css */
+
+/* تخطيط الجسم */
+body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
-header ul {
-  display: flex;
-  gap: 20px;
-}
-
-header .logo {
-  font-size: 1.5rem;
-  color: #ff4040;
-}
-
-/* Main Section Layout */
+/* تخطيط المحتوى الرئيسي */
 main {
   display: flex;
-  flex: 1;
+  flex: auto;
 }
 
 article {
   flex: 2;
-  padding: 20px;
-  overflow-y: auto;
-  background: white;
-  border-right: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* تمكين التمرير العمودي */
 }
 
 aside {
   flex: 1;
-  padding: 20px;
-  overflow-y: auto;
-  background-color: #f4f4f4;
+  overflow-y: auto; /* تمكين التمرير العمودي */
 }
 
-/* Footer Styling */
-footer {
-  background-color: #333;
-  color: white;
+/* تخطيط الرأس والتذييل */
+header, footer {
   text-align: center;
-  padding: 10px;
 }
+
+/* إضافات مرونة */
+.works_on_smartphone {
+  flex-direction: column; /* لمحاذاة العناصر عموديًا */
+}
+
+/* تنسيق الجدول */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #2b2d42;
+  color: white;
+}
+
