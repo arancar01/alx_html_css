@@ -1,41 +1,49 @@
-/* Flexbox container for the entire body */
-body {
-    display: flex; /* Make the body a flex container */
-    flex-direction: column; /* Arrange children (header, main, footer) vertically */
-    margin: 0; /* Remove default body margin */
-    height: 100vh; /* Ensure the body takes the full viewport height */
-  }
-  
-  /* Flexbox container for the main content */
-  main {
-    display: flex; /* Make the main section a flex container */
-    flex-direction: row; /* Arrange children (article, aside) horizontally */
-    flex: auto; /* Allow main to grow and fill available space */
-  }
-  
-  /* Header and Footer */
-  header, footer {
-    background-color: #f4f4f4; /* Light background for header and footer */
-    padding: 1rem; /* Add some padding */
-    text-align: center; /* Center text */
-    border: 1px solid #ddd; /* Add a light border */
-  }
-  
-  /* Article and Aside */
-  article {
-    flex: 2; /* Takes 2/3 of the available width */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 1rem; /* Add padding for spacing */
-    border-right: 1px solid #ddd; /* Add a right border */
-  }
-  
-  aside {
-    flex: 1; /* Takes 1/3 of the available width */
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 1rem; /* Add padding for spacing */
-  }
-  
-  /* Footer at the bottom */
-  footer {
-    margin-top: auto; /* Push the footer to the bottom of the page */
-  }
+/* Header Styling */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  color: #ff4040;
+}
+
+/* Main Section Layout */
+main {
+  display: flex;
+  flex: 1;
+}
+
+article {
+  flex: 2;
+  padding: 20px;
+  overflow-y: auto;
+  background: white;
+  border-right: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f4f4f4;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
