@@ -1,38 +1,77 @@
 /* base.css */
+@media screen and (max-width: 768px) {
+    body.works_on_smartphone {
+        flex-direction: column;/* Adjust layout for smaller screens */
+    }
+    header, footer {
+        text-align: center; /* Center the header and footer text */
+    }
+    article {
+        flex: 1 1 100%; /* Article takes full width on small screens */
+    }
+    aside {
+        flex: 1 1 100%; /* Aside takes full width on small screens */
+    }
+} 
 
-/* إعدادات عامة */
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.5;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
 body {
-    background-color: #f9f9f9;
-    color: #333;
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	font-family: 'Josefin Sans', serif;
+	color: rgba(0, 0, 0, 0.8);
+}
+h1, h2, h3, h4, h5, h6, header {
+	font-family: 'Yeseva One', sans-serif;
 }
 
-/* إعدادات الروابط */
+header {
+	border-bottom: 1px solid rgb(221,221,221);
+	transition: border-bottom-color 1s ease;
+}
+header a {
+	color: rgba(0, 0, 0, 0.8);
+}
+aside {
+	background: #FAFAFA;
+}
+aside p {
+	border: 1px solid #bbb;
+	background: #ddd;
+	color: black;
+	border-radius: 10px;
+	padding: 15px 15px;
+}
+footer a {
+	color: rgba(0, 0, 0, 0.8);
+}
 a {
-    text-decoration: none;
-    color: #0066cc;
+	color: #0088f8;
 }
-
-a:hover {
-    color: #004b99;
-}
-
-/* الرسوم المتحركة لزر */
 .button {
-    background-color: #ef233c;
+    background-color: #f34a34;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 15px;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
-
 .button:hover {
-    background-color: #d90429;
+    background-color: #131313;
 }
 
