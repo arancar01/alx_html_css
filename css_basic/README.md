@@ -32,7 +32,6 @@ You can open either `index.html` or `tweets.html` in your web browser to view th
 
 ## Notes
 
-- Remember to replace placeholder content with your own information and projects.
 - Consider adding a section detailing your technologies or skills.
 - You can add a "Contact" section with your email address or social media links.
 
@@ -42,4 +41,4 @@ This project is for demonstration purposes only and is not actively accepting co
 
 ## Author
 
-This project was created by [Your Name].  (Replace with your actual name)
+This project was created by [Hamza errahmouni]. 
