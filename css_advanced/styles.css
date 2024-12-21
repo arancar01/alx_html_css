@@ -66,7 +66,7 @@ nav ul li a {/*course pricing login*/
 #text1 span{/*smiles grin laugh*/
     padding: 37px;
 }
-#tittle1 button {/*buttun*/
+#titre1 button {/*buttun*/
     border: 2px solid #C271FF;
     background: #C271FF;
     border-radius: 50px;
@@ -78,18 +78,18 @@ nav ul li a {/*course pricing login*/
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.8); /* Adds shadow */
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
 }
-#tittle1 button:hover {
+#titre1 button:hover {
     background-color: #3b1955; /* Hover background color */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6); /* Hover shadow effect */
 
 }
-#tittle1{/*Get Schooled*/    
+#titre1{/*Get Schooled*/    
     width: 100%;
     font-size: 5em;
     letter-spacing: 2px;
     padding: 100px;
 }
-#tittle1 h1 {/*GET SCHOOLED*/
+#titre1 h1 {/*GET SCHOOLED*/
     color: rgb(255, 255, 255); /* Text color */
     font-weight: bold; /* Text boldness */
     font-size: 1.4em; /* Font size */
@@ -110,13 +110,13 @@ nav ul li a {/*course pricing login*/
     justify-content: center;
     margin-left: 500px;
 }
-#tittle2 h2{/* from the pros*/
+#titre2 h2{/* from the pros*/
     color: #ebebeb;
     text-align: center;
     font-weight: lighter;
     margin: 30px;
 }
-#tittle2{
+#titre2{
     margin: 73px;
     padding: 50px;
     font-family: 'Arial', sans-serif;
@@ -135,10 +135,10 @@ nav ul li a {/*course pricing login*/
     align-items: center;
     justify-content: center;
 }
-#text2 img{/*,,*/
+#text2 img{/* */
     border-radius: 50%;
 }
-#text2 h3, p {/* TEXT T7T TSAWER */
+#text2 h3, p {/* */
     color: #ffffff;
     padding: 10px;
     font-style: italic;
@@ -348,8 +348,8 @@ footer p{
     justify-content: center;
     align-items: center;
     font-weight: lighter;
-    font-size: .7em;
-    margin-top: 0;
+    font-size: 0.7em;
+    margin-top: 0px;
 }
 .normal {
     font-weight: normal;
