@@ -45,3 +45,7 @@ To get started with this project, clone the repository from GitHub:
 
 ```bash
 git clone https://github.com/arancar01/alx_html_css.git
+
+## Author
+
+This project was created by [Hamza errahmouni].
