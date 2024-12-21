@@ -2,83 +2,127 @@
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width: 768px) {
+    body.works_on_smartphone {
+        /* Adjust layout for smaller screens */
+        flex-direction: column;
+    }
+
+    header, footer {
+        text-align: center; /* Center the header and footer text */
+    }
+
+    article {
+        flex: 1 1 100%; /* Article takes full width on small screens */
+    }
+
+    aside {
+        flex: 1 1 100%; /* Aside takes full width on small screens */
+    }
+    aside p {
+	border-radius: 10px;
+	padding: 20px 20px;
+}
+}
 body {
-    background-image: url("Object.png");
+    background-image: url("background.png");
     background-repeat: no-repeat;
     background-size: contain;
-  }
+}
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
-nav img{
-    margin: 50px ; 
-    display: flex;
+nav img { /***logo***/
+    margin: 50px; /* Space around the logo */
+    display: flex; /* Flex display if needed */
+    width: 200px; /* Adjust width to your desired size */
+    height: auto; /* Maintain aspect ratio */
 }
-nav ul{
+nav ul{/*nav bar*/
     list-style: none;
     text-decoration: none;
     margin: 50px;
 }
 nav ul li{
-    display: inline;
+    display: inline;/**innlie course pricing login**/
 }
 nav ul li :hover{
-    color: rgb(194,113,255) ;
+    color: rgb(72, 10, 80) ;/**color beyond course pricing login***/
 }
-nav ul li a {
+nav ul li a {/*course pricing login*/
     text-decoration: none;
-    text-align: center; 
+    font-size: 16px;
+    text-transform: uppercase; /* Make text uppercase */
+    text-align: center;
+    font-weight: bold; /* Text boldness */ 
+    font-family: 'Arial', sans-serif;
     color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
 }
-#tittle1{    
+#text1 span{/*smiles grin laugh*/
+    padding: 37px;
+}
+#tittle1 button {/*buttun*/
+    border: 2px solid #C271FF;
+    background: #C271FF;
+    border-radius: 50px;
+    color: #fff;
+    padding: 14px 29px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 600px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.8); /* Adds shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+}
+#tittle1 button:hover {
+    background-color: #3b1955; /* Hover background color */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6); /* Hover shadow effect */
+
+}
+#tittle1{/*Get Schooled*/    
     width: 100%;
     font-size: 5em;
     letter-spacing: 2px;
     padding: 100px;
 }
-#tittle1 h1{
-    color: white;
-    font-weight: bolder;
-    align-items: center;
-    justify-content: center;
-    margin-left: 300px;
+#tittle1 h1 {/*GET SCHOOLED*/
+    color: rgb(255, 255, 255); /* Text color */
+    font-weight: bold; /* Text boldness */
+    font-size: 1.4em; /* Font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+    
+    letter-spacing: 3px; /* Spacing between letters */
+    text-align: center; /* Center align the text */
+    margin-right: 12%; /* Align text to the center */
+    margin-top: 50px; /* Add some margin from the top */
 }
-#text1 {
+#text1 {/*smiles grin laugh*/
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 15px;
+    font-weight: bold;
     align-items: center;
     justify-content: center;
     margin-left: 500px;
 }
-#text1 span{
-    padding: 30px;
-}
-#tittle1 button{
-    border: 2px solid #C271FF;
-    background: #C271FF;
-    border-radius: 50px;
-    color: #fff;
-    padding: 15px 32px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-left: 540px;
-}
-#tittle2{
-    margin: 50px;
-    padding: 50px;
-}
-#tittle2 h2{
-    color: #fff;
+#tittle2 h2{/* from the pros*/
+    color: #ebebeb;
     text-align: center;
     font-weight: lighter;
     margin: 30px;
 }
+#tittle2{
+    margin: 73px;
+    padding: 50px;
+    font-family: 'Arial', sans-serif;
+    padding: 50px;
+}
+
 #text2{
     display: flex;
     flex-direction: row;
@@ -91,12 +135,14 @@ nav ul li a {
     align-items: center;
     justify-content: center;
 }
-#text2 img{
+#text2 img{/*,,*/
     border-radius: 50%;
 }
-#text2 h3 ,p{
-    color: #000000;
+#text2 h3, p {/* TEXT T7T TSAWER */
+    color: #ffffff;
     padding: 10px;
+    font-style: italic;
+    font-size: 16px; 
 }
 #quote{
     background-color: #C271FF;
@@ -123,7 +169,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 60px;
 }
 .tutorials2{
     display: flex;
@@ -133,14 +179,14 @@ nav ul li a {
     margin-top: 30px;
 }
 .tutorials3{
-    width: 335px;
-    height: 335px;
+    width: 235px;
+    height: 435px;
 }
 .image-container {
     position: relative;
     width: 255px;
     height: 154px;
-}
+    }
 .background-image {
     width: 100%;
     height: auto;
@@ -148,18 +194,30 @@ nav ul li a {
 }
 .overlay-image {
     position: absolute;
-    top: 25%; 
+    top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    width: 70px;
+    width: 60px;
     height: auto;
     
 }
-.tutorials3 h3{
+.tutorials3 h3{/**************************/
     margin-top: 0; 
+    padding-inline: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #363636;
+    margin-top: 15px;
 }
 .tutorials3 p{
-    color: #000000;
+    color: #757575;
+    font-family: normal;
+    font-size: 13px;
+    font-family: 'Arial', sans-serif;
+    padding: 5%;
+    font-size: 0.8em; /* Font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+    letter-spacing: 1px; /* Spacing between letters */
 }
 .tot{
     height: 70px;
@@ -175,7 +233,7 @@ nav ul li a {
     justify-content: center;
 }
 .tutorials4 h4{
-    color: #C271FF;
+    color: #bb63ff;
     margin-left: 20px;
     margin-top: 5px;
 }
@@ -185,12 +243,12 @@ nav ul li a {
 }
 .icon{
     display: flex;
-    color: #C271FF;
+    color: #bb63ff;
     width: 110px;
     height: 15px;
     margin: 15px;
 }
-.ico p{
+.ico p{/*8 min*/
     color: #C271FF;
     display: flex;
     align-items: center;
@@ -208,33 +266,48 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Arial', sans-serif;
+    padding: 5%;
+    font-family: normal;
+    font-family: 'Arial', sans-serif; /* Font family */
+    letter-spacing: 1px; /* Spacing between letters */
+    
 }
-.member {
+.member {/*smile logo*/
     display: flex;
     justify-content: space-evenly;
-}
+    }
 .member div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 160px;
-    width: 260px;
-    color: #fff;
+    height: px;
+    width: 280px;
+    color: #d8d8d8;
+    
 }
 .member div h3 , p {
     padding: 10px;
+    margin-left: 00px;
 }
-.membership button{
-  border: 2px solid #C271FF;
-  background: #C271FF;
-  border-radius: 50px;
-  color: #fff;
-  padding: 15px 32px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-left: 630px;
-  margin-top: 80px;
+.membership button {
+    border: 2px solid #C271FF;
+    background: #C271FF;
+    border-radius: 50px;
+    color: #fff;
+    padding: 15px 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 730px;
+    margin-top: 80px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.8); /* Adds shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Ensure box-shadow is included in transition */
+}
+
+.membership button:hover {
+    background-color: #3b1955; /* Hover background color */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6); /* Hover shadow effect */
 }
 .faq h2{
     padding: 50px;
@@ -242,10 +315,10 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     font-weight: lighter;
-    font-size: 2.2em;
+    font-size: 3em;
 }
 .faq{
-    height: 500px;
+    height: 600px;
 }
 .faq2{
     display: flex;
@@ -253,7 +326,7 @@ nav ul li a {
     justify-content: space-evenly;
 }
 .faq3{
-    width: 40%;
+    width: 20%;
 }
 .faq3 div h3{
     margin-bottom: 10px;
@@ -268,6 +341,7 @@ footer div {
     align-items: center;
     justify-content: space-around;
     height: 200px;
+    margin-top: 50px;
 }
 footer p{
     display: flex;
@@ -276,4 +350,11 @@ footer p{
     font-weight: lighter;
     font-size: .7em;
     margin-top: 0;
+}
+.normal {
+    font-weight: normal;
+    font-style: normal;
+}
+blockquote {
+    font-size: 1.5em; /* Increase font size */
 }
